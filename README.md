@@ -127,7 +127,5 @@ Dependencies: `numpy`, `scipy`, `scikit-learn`, `pandas`, `mne`, `matplotlib`.
 ---
 
 ## A few honest caveats
-
-- The ALS sessions are causal folds of a single recording, not separate recording days, so the cleanest evidence for true between-day jumps comes from Stieger and SHU.
 - The co-adaptation uses true labels to retrain, so it is an upper bound on what is achievable, not a ready-to-deploy estimate.
 - "Jump" versus "ambiguous" is a labelling convenience on top of the underlying measurements; the measurements themselves (drift significance, separability collapse) are the real evidence.
